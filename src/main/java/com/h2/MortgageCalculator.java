@@ -21,4 +21,13 @@ public class MortgageCalculator {
 
         return interestRate / 12;
     }
+
+    public void calculateMonthlyPayment() {
+        long P = loanAmount;
+        float r = getMonthlyInterestRate();
+        int n = getNumberOfPayments();
+
+        double M = P * (((r * Math.pow(1 + r, n))) / ((Math.pow((1 + r), n)) - 1));
+        this.monthlyPayment = M;
+    }
 }
