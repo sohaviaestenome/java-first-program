@@ -15,5 +15,6 @@ public class SavingsCalculator {
         for ( int i=0; i< credits.length; i++) {
             sum += credits[i];
         }
+        return sum
     }
 }
