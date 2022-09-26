@@ -8,4 +8,8 @@ public class SavingsCalculator {
         this.credits = credits;
         this.debits = debits;
     }
+
+    private float SumOfCredits() {
+        return 0.0f;
+    }
 }
