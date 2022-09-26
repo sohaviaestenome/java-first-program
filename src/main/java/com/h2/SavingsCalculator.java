@@ -5,6 +5,7 @@ public class SavingsCalculator {
     private float[] debits;
 
     public SavingsCalculator(float[] credits, float[] debits ) {
-
+        this.credits = credits;
+        this.debits = debits;
     }
 }
